@@ -1,0 +1,15 @@
+{
+  "name": "modules-and-classes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "module-basics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "traceur": "0.0.111",
+    "es6-module-loader": "0.17.11"
+  }
+}
