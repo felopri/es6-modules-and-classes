@@ -1,2 +1,2 @@
 export let projectId = 99;
-export let projectName = 'B';
+export let projectName = 'BuiltIn';
