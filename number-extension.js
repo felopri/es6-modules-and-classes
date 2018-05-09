@@ -31,5 +31,12 @@ console.log(Math.sign(-20));
 console.log(Math.sign(NaN));
 //NaN
 
+
 console.log(Math.cbrt(27));
 //3
+
+
+console.log(Math.trunc(27.1));
+//27
+console.log(Math.trunc(-27.9));
+//-27
