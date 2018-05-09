@@ -30,3 +30,6 @@ console.log(Math.sign(-20));
 //-1
 console.log(Math.sign(NaN));
 //NaN
+
+console.log(Math.cbrt(27));
+//3
