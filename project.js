@@ -1,13 +1,14 @@
 class Project {
     constructor(name) {
-        let location = 'Málaga';
+        this.location = 'Málaga';
     }
 }
 class SoftwareProject extends Project {
     constructor() {
         super();
+        this.location = this.location + ' Beach';
     }
 }
 let p = new SoftwareProject();
 console.log(p.location);
-//undefined
+//Málaga Beach
