@@ -8,3 +8,11 @@ let target = {};
 Object.assign(target, a, b);
 console.log(target);
 //{ a: 5, b: 2} 
+
+
+let amount = NaN;
+console.log(amount === amount);
+//false
+
+console.log(Object.is(amount,amount));
+//true
