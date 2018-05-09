@@ -14,3 +14,9 @@ console.log(Array.from(surfer).length);
 //3
 console.log(surfer);
 //🌊🏄🐋
+
+let otherTitle = 'Surfer';
+let output = String.raw`${otherTitle} \u{1f3c4}\n`;
+console.log(output);
+//Surfer \u{1f3c4}\n
+
