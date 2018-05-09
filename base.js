@@ -1,4 +1,4 @@
-import someValue from 'module1.js';
+import * as values from 'module1.js';
 
-console.log(someValue);
-//99
+console.log(values);
+//{projectId: 99, projectName: "BuiltIn"}
