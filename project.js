@@ -1,13 +1,13 @@
 class Project {
-    getTaskCount(){
-        return 50;
+    constructor(name) {
+        this.location = 'Málaga';
     }
 }
 class SoftwareProject extends Project {
-    getTaskCount(){
-        return super.getTaskCount()+6;
+    constructor() {
+        super();
     }
 }
 let p = new SoftwareProject();
-console.log(p.getTaskCount());
-//56
+console.log(p.location);
+//Málaga
