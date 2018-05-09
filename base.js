@@ -1,3 +1,5 @@
-import { projectName, projectId } from 'module1.js';
+console.log('start');
+import { projectName, projectId as id } from 'module1.js';
+console.log('end');
 
-console.log(`${projectName} with id:${projectId}`);
+console.log(`${projectName} with id:${id}`);
