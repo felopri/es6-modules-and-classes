@@ -1,14 +1,10 @@
 class Project {
     constructor() {
-        console.log(new.target);
+        console.log(new.target.getDefaultId());
     }
 }
 class SoftwareProject extends Project {
-    constructor() {
-        super();
-    }
+    static getDefaultId() { return 99; }
 }
 var p = new SoftwareProject();
-//cosntructor() {
-//  super();    
-//}
+//99
