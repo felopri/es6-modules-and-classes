@@ -4,8 +4,16 @@ console.log(isNaN(s));
 console.log(Number.isNaN(s));
 //false
 
-let a = '8000';
-console.log(isFinite(a));
+let n = '8000';
+console.log(isFinite(n));
 //true
-console.log(Number.isFinite(a));
+console.log(Number.isFinite(n));
+//false
+
+
+let a = Math.pow(2, 53) -1;
+console.log(Number.isSafeInteger(a));
+//true
+a = Math.pow(2, 53);
+console.log(Number.isSafeInteger(a));
 //false
