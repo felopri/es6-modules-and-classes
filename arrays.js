@@ -11,6 +11,10 @@ let salaries3 = Array.from(amounts, v => v+100);
 console.log(salaries3);
 //[900, 910, 920]
 
-salaries.fill(900);
+salaries3.fill(600, 1);
 console.log(salaries3);
-//[900, 900, 900]
+//[900, 600, 600]
+
+salaries3.fill(700);
+console.log(salaries3);
+//[700, 700, 700]
