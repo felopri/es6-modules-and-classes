@@ -1,6 +1,6 @@
 class Project {
     constructor(name) {
-        this.location = 'Málaga';
+        let location = 'Málaga';
     }
 }
 class SoftwareProject extends Project {
@@ -10,4 +10,4 @@ class SoftwareProject extends Project {
 }
 let p = new SoftwareProject();
 console.log(p.location);
-//Málaga
+//undefined
