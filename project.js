@@ -1,15 +1,13 @@
 class Project {
-    constructor(name) {
-        console.log('constructing Project');
+    getTaskCount(){
+        return 50;
     }
 }
 class SoftwareProject extends Project {
-    constructor() {
-        super();
-        console.log('constructing SoftwareProject');
+    getTaskCount(){
+        return super.getTaskCount()+6;
     }
 }
 let p = new SoftwareProject();
-
-//constructing Project
-//constructing SoftwareProject
+console.log(p.getTaskCount());
+//56
