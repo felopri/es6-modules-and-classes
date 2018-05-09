@@ -3,7 +3,7 @@ function doAsync() {
         console.log('in promise code');
         setTimeout(function() {
             console.log('resolving...');
-            reject('Database Error');
+           // reject('Database Error');
         },2000);
     });
     return p;
@@ -29,3 +29,16 @@ doAsyncTwo().then(function(value){
 });
 //Nope: Some Error
 
+
+let p1 = new Promise((resolve, reject)=>{
+    setTimeout(function() {resolve();}, 3000);
+});
+let p2 = new Promise((resolve, reject)=>{
+    setTimeout(function() {resolve();}, 9000);
+});
+Promise.race([p1,p2]).then(
+    function(value){console.log('Ok')},
+    function(reason){console.log('Nope')}
+);
+//(3 seconds delay)
+//Ok
