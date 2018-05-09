@@ -22,3 +22,12 @@ it2.next(2);
 it2.next(4);
 it2.next(42);
 //42
+
+function* processThree() {
+    let value = 4 * (yield 42);
+    console.log(value);
+}
+let it3 = processThree();
+it3.next();
+it3.next(10);
+//40
