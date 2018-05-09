@@ -17,3 +17,16 @@ console.log(Number.isSafeInteger(a));
 a = Math.pow(2, 53);
 console.log(Number.isSafeInteger(a));
 //false
+
+
+//--------MATH-----------
+console.log(Math.sign(0));
+//0
+console.log(Math.sign(-0));
+//-0
+console.log(Math.sign(12));
+//1
+console.log(Math.sign(-20));
+//-1
+console.log(Math.sign(NaN));
+//NaN
