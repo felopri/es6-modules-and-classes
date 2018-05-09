@@ -23,3 +23,12 @@ console.log(Calculator.name);
 //Calculator
 console.log(c.add.name);
 //add
+
+//Calculator.name = 'MyCalculator';
+//Error: read only property 'name'
+
+Object.defineProperty(Calculator, 'name', {
+    value: 'MyCalculator'
+});
+console.log(Calculator.name);
+//Calculator
