@@ -32,3 +32,20 @@ console.log(it3.next());
 //{value: 42, done: false}
 it3.next(10);
 //40
+
+
+function* processFour() {
+    yield 42;
+    yield* [1, 2, 3];
+}
+let it4 = processFour();
+console.log(it4.next().value);
+//42
+console.log(it4.next().value);
+//1
+console.log(it4.next().value);
+//2
+console.log(it4.next().value);
+//3
+console.log(it4.next().value);
+//undefined
