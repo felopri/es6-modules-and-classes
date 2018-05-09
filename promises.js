@@ -3,13 +3,13 @@ function doAsync() {
         console.log('in promise code');
         setTimeout(function() {
             console.log('resolving...');
-            reject();
+            reject('Database Error');
         },2000);
     });
     return p;
 }
-doAsync().then(function(){
-    console.log('Fullfilled');
-}, function(){
-    console.log('Rejected!')
+doAsync().then(function(value){
+    console.log('Fullfilled! '+ value);
+}, function(reason){
+    console.log('Rejected! '+ reason)
 });
