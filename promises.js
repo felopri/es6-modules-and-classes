@@ -13,3 +13,19 @@ doAsync().then(function(value){
 }, function(reason){
     console.log('Rejected! '+ reason)
 });
+//in promise code
+//resolving...
+//Rejected! Database Error
+
+
+function doAsyncTwo() {
+    //return Promise.resolve('Some String');
+    return Promise.reject('Some Error');
+}
+doAsyncTwo().then(function(value){
+    console.log('Ok: '+ value);
+}, function(reason){
+    console.log('Nope: '+ reason)
+});
+//Nope: Some Error
+
