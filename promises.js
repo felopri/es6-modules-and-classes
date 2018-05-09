@@ -3,9 +3,13 @@ function doAsync() {
         console.log('in promise code');
         setTimeout(function() {
             console.log('resolving...');
-            resolve();
+            reject();
         },2000);
     });
     return p;
 }
-let promise = doAsync();
+doAsync().then(function(){
+    console.log('Fullfilled');
+}, function(){
+    console.log('Rejected!')
+});
