@@ -10,9 +10,8 @@ console.log(target);
 //{ a: 5, b: 2} 
 
 
-let amount = NaN;
+let amount = 0, totalAmount = -0;
 console.log(amount === amount);
-//false
-
-console.log(Object.is(amount,amount));
 //true
+console.log(Object.is(amount,totalAmount));
+//false
