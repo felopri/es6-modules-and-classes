@@ -28,6 +28,7 @@ function* processThree() {
     console.log(value);
 }
 let it3 = processThree();
-it3.next();
+console.log(it3.next());
+//{value: 42, done: false}
 it3.next(10);
 //40
