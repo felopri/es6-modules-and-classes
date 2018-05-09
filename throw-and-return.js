@@ -10,7 +10,7 @@ function* process() {
 let it = process();
 console.log(it.next().value);
 //9000
-console.log(it.throw('foo'));
-//{value: undefined, done: true}
+console.log(it.return('foo'));
+//{value: 'foo', done: true}
 console.log(it.next());
 //{value: undefined, done: true}
