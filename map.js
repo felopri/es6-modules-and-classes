@@ -18,3 +18,16 @@ let arr = [
 let employees2 = new Map(arr);
 console.log(employees2.size);
 //2
+
+
+
+
+//-------------WEAK MAP----------------
+
+let employees3 = new WeakMap(arr);
+
+employee1 = null;
+//wait for GC
+
+console.log(employees3.size);
+//undefined
