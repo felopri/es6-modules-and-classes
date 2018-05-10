@@ -28,3 +28,13 @@ console.log(r2._id);
 console.log(alt._id);
 //88
 
+
+
+let rest={
+    id:2000
+};
+console.log(Reflect.isExtensible(rest));
+//true
+Reflect.preventExtensions(rest);
+console.log(Reflect.isExtensible(rest));
+//false
