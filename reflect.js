@@ -1,6 +1,11 @@
-class Restaurant {
+class Restaurant{
 }
-
-let r = Reflect.construct(Restaurant);
-console.log(r instanceof Restaurant);
-//true
+let setup={
+    getId(){
+        return 88;
+    }
+}
+let r = new Restaurant();
+Reflect.setPrototypeOf(r,setup);
+console.log(r.getId());
+//88
