@@ -23,3 +23,11 @@ console.log(salaries3);
 salaries3.fill(500, -1);
 console.log(salaries3);
 //[700, 700, 700, 500]
+
+
+let salaries4 = [600, 700, 800];
+let result = salaries4.find(value => value >= 750);
+console.log(result);
+//800
+console.log(salaries4.find(value => value >= 650););
+//700
