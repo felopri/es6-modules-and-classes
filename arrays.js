@@ -29,5 +29,5 @@ let salaries4 = [600, 700, 800];
 let result = salaries4.find(value => value >= 750);
 console.log(result);
 //800
-console.log(salaries4.find(value => value >= 650););
+console.log(salaries4.find(value => value >= 650));
 //700
