@@ -4,3 +4,8 @@ perks.add('Super Long Vacation');
 perks.add('Car');
 console.log(perks.size);
 //2
+
+console.log(perks.has('Car'));
+//true
+console.log(perks.has('Jet'));
+//false
