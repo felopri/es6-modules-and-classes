@@ -1,11 +1,11 @@
 class Restaurant{
-}
-let setup={
-    getId(){
-        return 88;
+    constructor(){
+        this._id=900;
+    }
+    get id(){
+        return this._id;
     }
 }
 let r = new Restaurant();
-Reflect.setPrototypeOf(r,setup);
-console.log(r.getId());
+console.log(Reflect.get(r, 'id', {_id:88}));
 //88
