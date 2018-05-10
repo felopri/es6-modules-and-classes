@@ -10,3 +10,11 @@ console.log(employees.get(employee1));
 employees.delete(employee2);
 console.log(employees.size);
 //1
+
+let arr = [
+    [employee1, 'ABC'],
+    [employee2, '123']
+];
+let employees2 = new Map(arr);
+console.log(employees2.size);
+//2
