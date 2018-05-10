@@ -6,3 +6,7 @@ employees.set(employee1,'ABC');
 employees.set(employee2,'123');
 console.log(employees.get(employee1));
 //ABC
+
+employees.delete(employee2);
+console.log(employees.size);
+//1
