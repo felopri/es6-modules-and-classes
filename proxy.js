@@ -10,3 +10,18 @@ var p = new Proxy(e, {
 });
 console.log(p.salary);
 //Attempted access: salary
+var e2 = new Employee();
+var p2 = new Proxy(e2, {
+    get: function(target,prop,receiver){
+        if(prop === 'salary'){
+            return 'Denied';
+        }
+        return Reflect.get(target, prop, receiver);
+    }
+});
+console.log(p2.salary);
+//Denied
+console.log(p2.name);
+//Milton Waddams
+
+
