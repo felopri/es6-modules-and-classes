@@ -37,3 +37,5 @@ console.log(...ids.entries());
 // [0, "A"], [1, "B"] ,[2, "C"]
 console.log(...ids.keys());
 // 0 1 2
+console.log(...ids.values());
+// A B C
