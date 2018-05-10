@@ -39,3 +39,17 @@ console.log(...ids.keys());
 // 0 1 2
 console.log(...ids.values());
 // A B C
+
+
+
+let buffer = new ArrayBuffer(1024);
+let a = new Uint8ClampedArray(buffer);
+a[0]=-12;
+console.log(a[0]);
+//0
+
+let b = new Uint8Array(buffer);
+let c = new Uint16Array(buffer);
+b[1]=1;
+console.log(c[0]);
+//256
