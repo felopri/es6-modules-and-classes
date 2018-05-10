@@ -10,6 +10,8 @@ var p = new Proxy(e, {
 });
 console.log(p.salary);
 //Attempted access: salary
+
+
 var e2 = new Employee();
 var p2 = new Proxy(e2, {
     get: function(target,prop,receiver){
@@ -23,6 +25,19 @@ console.log(p2.salary);
 //Denied
 console.log(p2.name);
 //Milton Waddams
+
+
+//---------CALL-----------------
+function getId(){
+    return 55;
+}
+var p = new Proxy(getId,{
+    apply: function (target,thisArg,argumentsList){
+        return Reflect.apply(target,thisArg,argumentsList);
+    }
+});
+console.log(p());
+//55
 
 
 //----------REVOKE-----------------
