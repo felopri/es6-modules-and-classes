@@ -31,3 +31,9 @@ console.log(result);
 //800
 console.log(salaries4.find(value => value >= 650));
 //700
+
+let ids = ['A', 'B', 'C'];
+console.log(...ids.entries());
+// [0, "A"], [1, "B"] ,[2, "C"]
+console.log(...ids.keys());
+// 0 1 2
