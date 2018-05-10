@@ -12,3 +12,11 @@ console.log(perks.has('Jet'));
 
 console.log(...perks.entries());
 //["Car","Car"], ["Super Long Vacation","Super Long Vacation"]
+
+
+let mySet = new Set([
+    {id: 800},
+    {id: 800}
+]);
+console.log(mySet.size);
+//2
