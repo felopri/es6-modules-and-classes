@@ -20,3 +20,6 @@ console.log(salaries3);
 salaries3.fill(700);
 console.log(salaries3);
 //[700, 700, 700, 700]
+salaries3.fill(500, -1);
+console.log(salaries3);
+//[700, 700, 700, 500]
